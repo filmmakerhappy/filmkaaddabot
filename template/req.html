@@ -123,14 +123,14 @@ footer h1 a{
   </div>
   <ul>
     <li><a href="#About.html">ℍOME</a></li>
-    <li><a href="#channelinfo2">𝔸BOUT</a></li>
+    <li><a onclick="ShowAndHide()">𝔸BOUT</a></li>
     
   </ul>
  
 </header>
 <body>
 <main> 
-
+<div id="SectionName" STYLE="display:none">
         <!-- Online Video Player -> to be displayed here  -->
 <div class="player">
             <div class="m-1 lg:w-9/12 lg:px-12 lg:py-4 w-full">
@@ -174,7 +174,7 @@ BUTTONS TO BE DISPLAYED HERE
 </main>
 
 
-</body>
+
 <footer> 
 
 <h1 class="text-center p-3">Redesined By -  <a href="https://t.me/Unknown_X_Coder">Unknown</a></h1>
@@ -184,8 +184,22 @@ BUTTONS TO BE DISPLAYED HERE
 <a href="he" class="bi-telegram" ></a>
 <a href="he" class="bi-github" ></a>
 </div>
-
+</div>
 </footer>
+</body>
+	<script>
+function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    var main = document.getElementById('check');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+        main.style.display = "none"
+    } else {
+        x.style.display = 'none';
+    }
+} 
 
+
+</script>
 </html>
       
