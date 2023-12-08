@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="req.css">
+  <link rel="stylesheet" href="newcss.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -14,8 +14,11 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
       <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
       <script src="https://cdn.tailwindcss.com"></script>
-      <style> 
-      header{
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+      <style>
+
+header{
   background-color:black;
    position:fixed;
    top:0px;
@@ -32,17 +35,21 @@ body{
   
 }
 
-header .logo{
+#logo{
 padding-top: 16px;
-padding-left: 30px;
+padding-left: 15px;
 font-weight: bold;
 color:white;
-}
 
+}
+#navv1 a{
+  color:white;
+  
+}
 header ul{
   display:flex;
   justify-content: space-between;
-  padding-right:40px;
+  padding-right:15px;
   padding-top: 16px;
 }
 
@@ -99,6 +106,7 @@ header ul li a{
   
   
 }
+
 footer h1 a{
   color:red;
   font-weight: bold;
@@ -113,25 +121,153 @@ footer h1 a{
   padding: 10px;
 }
 
-         
- </style>
+#logo2{
+  padding-top: 16px;
+padding-left: 30px;
+font-weight: bold;
+color:white;
+}
+
+.ch{
+  max-width: 100%
+  background-color:black;
+}
+#nav2{
+  margin-top:60px;
+  background-color:black;
+  padding-bottom:20px;
+  display:flex;
+  justify-content:space-around;
+  position:fixed;
+  top:0px;
+  left:0;
+  width:100%;
+}
+#nav2 b{
+  padding-right:15px;
+  padding-top:20px;
+  color:white;
+  font-size:15px;
+}
+.welcome{
+  
+  color:red;
+  padding:20px;
+  padding-top:160px;
+  padding-bottom:500px;
+}
+.wlctxt{
+  padding-bottom:15px;
+  
+  color:black;
+font-size:20px;
+font-weight:bold;
+}
+.wlctxt2{
+  padding-bottom:370px;
+  font-size:20px;
+letter-spacing:0.5px;  
+
+}
+
+.list{
+  text-align: center;
+ padding-top: 80px;
+}
+.list h1{
+  color:red;
+  padding-bottom:20px;
+  padding-top:20px;
+}
+.list h6{
+  background-color:black;
+  padding:20px;
+  color:white;
+  margin-left:5px;
+  margin-right:5px;
+  border-radius:8px;
+}
+#about{
+  
+  padding-top:80px;
+}
+#about h6{
+ background-color:black;
+   padding:20px;
+   color:white;
+   margin-left:5px;
+   margin-right:5px;
+   text-align: center;
+   border-radius:8px;
+}
+#about h5{
+text-align: center;
+padding-top:50px;
+padding-bottom:20px;
+
+}
+
+</style>
 </head>
+<body> 
 <header> 
 
-  <div class="logo">
-  <a>𝕌KNOWN</a>
+  <div id="logo">
+  <a>UNKNOWN</a>
   </div>
-  <ul>
-    <li><a href="#About.html">ℍOME</a></li>
-    <li><a onclick="ShowAndHide()">𝔸BOUT</a></li>
+  <ul id="navv1">
+    <li><a onclick="ShowAndHideSec1()">ℍOME</a></li>
+    <li><a onclick="ShowAndHideSec()">𝔸BOUT</a></li>
     
   </ul>
- 
+ <!-- sidebar menu -->
+
+
 </header>
-<body>
+<div id="sec2" STYLE="display:none">
+  
+  <div id="nav2">
+      <b><a onclick="ShowAndHideWelcome()">𝕎ELCOME</a></b>
+      <b><a onclick="ShowAndHideList()">𝕃IST</a></b>
+      <b><a onclick="ShowAndHideAbout()">𝔸BOUT</a></b>
+</div>
+  
+  <div class="welcome" id="welcome" STYLE="display:block" >
+  <h4 class="wlctxt text-center">
+WELCOME TO OUR STREAMING PAGE
+</h4>
+<h5 class="wlctxt2 text-center">Hello, good morning, hi there, hey, howdy, greetings, entertainment, bonjour, hola, ciao, namaste, salaam, shalom, guten tag!</h5>
+</div>
+
+
+
+<div class="list" id="listt" STYLE="display:none"> 
+
+<h1> Our Channle List</h1>
+<h6><a>Unknwon Cinema</a></h6>
+<h6><a>Unknown Cinema Request Group</a></h6>
+<h6><a>Unknown Botz</a></h6>
+<h1> Our Bots List</h1>
+<h6><a href="https://t.me/UnknownBotz">Unknwon Bot 2 </a></h6>
+<h6><a>Unknown Bot 1 </a></h6>
+
+
+</div>
+
+<div id="about" STYLE="display:none">
+  
+  <h5>If you have any problm / Issue You can here  </h5>
+  <h6><a>Contact</a></h6>
+  
+</div>
+
+  </div>
+
+<div id="sec1">
 <main> 
-<div id="SectionName" STYLE="display:none">
+
         <!-- Online Video Player -> to be displayed here  -->
+
 <div class="player">
             <div class="m-1 lg:w-9/12 lg:px-12 lg:py-4 w-full">
                 <video  class="player " playsinline controls>
@@ -143,25 +279,22 @@ footer h1 a{
 
 </main>
 <main> 
-	<div class="fileinfo"> 
+	<div id="check" class="fileinfo"> 
 	<div class="name">
 	 <span>File Name:</span>
 	 </div>
   
   <div>
-	 <i class="text-black">{{file_name}}</i>
+	 <i class="text-black">Ancient Aliens S10 Combined WebRip 72<form><form></form></form>0p Dual Audio (Hindi - English) AAC 2.0 x264 ESub P2 – mkvCinemas ~ Borax</i>
 	 </div>
 	 <div class="filesize">
-	   <span>File Size : {{file_size}}</span>
+	   <span>File Size :  2.9gb</span>
 	   
 	 </div>
 	 </div>
 </main>
 <main> 
-BUTTONS TO BE DISPLAYED HERE 
-
-
-
+BUTTONS TO BE DISPLAYED HERE
 </main>
 
 <main> 
@@ -173,6 +306,7 @@ BUTTONS TO BE DISPLAYED HERE
            </div>
 </main>
 
+</div>
 
 
 <footer> 
@@ -184,20 +318,97 @@ BUTTONS TO BE DISPLAYED HERE
 <a href="he" class="bi-telegram" ></a>
 <a href="he" class="bi-github" ></a>
 </div>
-</div>
+
 </footer>
 </body>
-	<script>
-function ShowAndHide() {
-    var x = document.getElementById('SectionName');
-    var main = document.getElementById('check');
-    if (x.style.display == 'none') {
-        x.style.display = 'block';
-        main.style.display = "none"
-    } else {
-        x.style.display = 'none';
-    }
-} 
+<script>
+
+function ShowAndHideSec() {
+  var m = document.getElementById('sec1');
+  var x = document.getElementById('sec2');
+  
+  if (x.style.display == 'none') {
+    x.style.display = 'block';
+    m.style.display = 'none';
+    
+    
+
+  } else {
+    return none
+    
+  }
+}
+
+function ShowAndHideSec1() {
+  var m = document.getElementById('sec1');
+  var x = document.getElementById('sec2');
+  
+  if (m.style.display == 'none') {
+    m.style.display = 'block';
+    x.style.display = 'none';
+    
+    
+
+  } else {
+    return none
+    
+  }
+}
+
+function ShowAndHideAbout() {
+  var x = document.getElementById('listt');
+  var m = document.getElementById('about');
+  var w = document.getElementById('welcome');
+  
+  if (m.style.display == 'none') {
+    x.style.display = 'none';
+    m.style.display = 'block';
+    w.style.display = 'none';
+    
+
+  } else {
+    return none
+    
+  }
+}
+
+
+
+function ShowAndHideList() {
+  var x = document.getElementById('listt');
+  var m = document.getElementById('about');
+  var w = document.getElementById('welcome');
+  
+  if (x.style.display == 'none') {
+    x.style.display = 'block';
+    m.style.display = 'none';
+    w.style.display = 'none';
+    
+
+  } else {
+    return none
+    
+  }
+}
+
+
+
+function ShowAndHideWelcome() {
+  var x = document.getElementById('listt');
+  var m = document.getElementById('about');
+  var w = document.getElementById('welcome');
+  
+  if (w.style.display == 'none') {
+    x.style.display = 'none';
+    m.style.display = 'none';
+    w.style.display = 'block';
+    
+
+  } else {
+    return none
+    
+  }
+}
 
 
 </script>
