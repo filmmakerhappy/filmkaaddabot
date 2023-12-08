@@ -190,9 +190,9 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b></b> <code>{file_name}</code>
+<b></b>{file_name}
 
-Join : @filmkaadda_2 <b>
+<a href="https://t.me/filmkaadda_2">𝖩𝗈𝗂𝗇  ➥ 「 @FilmKaAdda_2 」</a><b>
 </b>"""
     
     EX_FEATURE_TXT = """Yᴏᴜ Cᴀɴ Tʀʏ Aʟʟ Tʜᴇsᴇ Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs Fʀᴏᴍ Bᴇʟᴏᴡ Oᴘᴛɪᴏɴ..!!!"""
