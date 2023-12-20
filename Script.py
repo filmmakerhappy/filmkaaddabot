@@ -190,7 +190,7 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b></b>{file_name}
+<b></b>{file_caption}
 
 <a href="https://t.me/filmkaadda_2">𝖩𝗈𝗂𝗇  ➥ 「 @FilmKaAdda_2 」</a><b>
 </b>"""
